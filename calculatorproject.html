@@ -1,0 +1,131 @@
+.<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Project</title>
+    <style>
+        body {
+            background-image: url(/picture/—Pngtree—3d\ rendering\ of\ calculator\ symbol_11772116.jpg) ;
+            background-size: auto;
+            background-position: center;
+            background-attachment: fixed;
+            
+        
+        }
+        
+
+        .content{
+            background-color: white;
+            width: 400px;
+            margin: auto;
+            margin-top: 100px;
+            border-radius: 8px;
+        }
+        .title{
+            font-size: 25px;
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            
+        }
+
+        label{
+            display: block;
+            margin: auto;
+            margin: 0px 20px;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+
+        .user-input{
+            width: 80%;
+            margin: 0px 35px;
+            margin-bottom: 10px ;
+            padding: 10px 15px;
+            border: 1px color(srgb rgb(0, 208, 255) green blue);
+            border-radius: 5px;
+
+        }
+
+        .checkbox-group span{
+            color: blue;
+            
+
+        }
+
+        .calculator-btn{
+            width: 89%;
+            margin: 0px 20px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border: 5px color(srgb red green blue);
+            border-radius: 5px;
+            background-color: black ;
+            color: aliceblue;
+            padding: 10px 15px;
+        }
+
+        .footer-text span{
+            color: blue;
+            
+        }
+
+        .footer-text{
+            text-align: center;
+            padding: 20px 20px;
+        }
+
+        .result{
+            text-align: right;
+            padding: 20px 10px;
+            background-color: black;
+            color: aliceblue;    
+
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="content">
+        <div class="title">Calculator Project</div>
+
+        <div class="result" id="result">
+            0
+        </div>
+
+        <div class="input-group">
+            <label for="">First Number</label>
+            <input type="number" class="user-input" id="firstNumber" placeholder="Enter First Value...">
+        </div>
+
+        <div class="input-group">
+            <label for="">Second Number</label>
+            <input type="number" class="user-input" id="secNumber" placeholder="Enter Second Value...">
+        </div>
+
+        <div class="input-group">
+            <label for="">Operator</label>
+            <select class="user-input" id="operation">
+                <option value="empty">Choose Operator...</option>
+                <option value="add">+</option>
+                <option value="minus">-</option>
+                <option value="multiply">*</option>
+                <option value="division">/</option>
+                <option value="modulus">%</option>
+            </select>
+        </div>
+
+        <div class="buttom-group">
+            <button type="button" class="calculator-btn" id="btnCalculate">Calculate</button>
+        </div> 
+
+        
+    </div>
+    
+
+    
+</body>
+<script src="./calculate.js"></script>
+</html>
